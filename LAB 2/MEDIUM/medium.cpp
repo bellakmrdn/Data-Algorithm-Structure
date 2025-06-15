@@ -1,5 +1,7 @@
-/* NAME : Noor Hidayatul Nabila binti Kamarudin
-ID : 22011843 */
+/*
+ID = 22011843
+Name = Noor Hidayatul Nabila binti Kamarudin
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
