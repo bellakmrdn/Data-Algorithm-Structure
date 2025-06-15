@@ -1,4 +1,7 @@
-//Noor Hidayatul Nabila Kamarudin 22011843
+/*
+ID = 22011843
+Name = Noor Hidayatul Nabila binti Kamarudin
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
