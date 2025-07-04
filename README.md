@@ -11,3 +11,7 @@ ID : 22011843
 | 11/6/2025 | 3      | Linked List: <br> - Singly <br> - Doubly |
 | 18/6/2025 | 4      | Circular Linked List: <br> - Singly Circular <br> - Doubly Circular |
 | 25/6/2025 | 5      | - Stack                              |
+| 04/7/2025 | 6      | Queue: <br> - Queue Array <br> - Queue Linked List <br> - Circular Queue |
+
+                   
+                   
