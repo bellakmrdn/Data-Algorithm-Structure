@@ -16,40 +16,36 @@ public: // constructor for initializing empty queue
         queue = new string[capacity];
         front = 0; //initialize index where first element will be dequeued
         rear = -1; //intialize index where last element was enqueue, -1 mean no element yet, when enqueue first item, increment it to 0
-        size = 0; // keeps track of current number of elements in queue.
     }
 
     void enqueue(string value) {
-        if (size == capacity) { // queue full
+        if (rear == capacity - 1) { // queue full
             cout<<"Queue overflow"<<endl;
             return;
         } 
-        rear = (rear + 1) % capacity; //circular behaviour?
+        rear++;
         queue[rear] = value;
-        size++;
         cout << "Enqueued: " <<value <<endl;
         }
     
 
     void dequeue() {
-        if (size == 0) {
+        if (front > rear) {
             cout << "Queue underflow" << endl;
             return;
         }
         cout << "Dequeued: " << queue[front] << endl;
-        front = (front + 1) % capacity;
-        size--;
+        front ++;
     }
 
     void display_queue() {
-        if (size == 0) {
+        if (front > rear) {
             cout << "Queue empty" << endl;
             return;
         }
         cout << "Queue contains: ";
-        for (int i = 0; i < size; i++){
-            int index = (front + i) % capacity;
-            cout << queue[index] << " ";
+        for (int i = front; i <= rear; i++){
+            cout << queue[i] << " ";
         }
         cout<<endl;
     }
@@ -76,8 +72,6 @@ int main() {
     
     return 0;
 }
-
-
 
 
 
